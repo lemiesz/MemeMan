@@ -25,4 +25,7 @@ public class MainViewPagerActivity extends FragmentActivity {
         mViewPager.setAdapter(mPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
     }
+
+
+
 }

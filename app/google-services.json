@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "963943734942",
+    "firebase_url": "https://memedreams-7d679.firebaseio.com",
+    "project_id": "memedreams-7d679",
+    "storage_bucket": "memedreams-7d679.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963943734942:android:0cdbc0cc79958726",
+        "android_client_info": {
+          "package_name": "com.example.lemie.moa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963943734942-mva7lu4qqdufh26hv8f42vehsjhnjt2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lemie.moa",
+            "certificate_hash": "325ABB53139B582139B2D507B034B502C04A1FEE"
+          }
+        },
+        {
+          "client_id": "963943734942-dskg6papj1eckbksu8qhn98rbqnan9oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBplt61GDdpKW3vnS4j4jsEUsDWHMm4Xlg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963943734942-dskg6papj1eckbksu8qhn98rbqnan9oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
