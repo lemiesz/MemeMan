@@ -4,8 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.lemie.moa.Views.MemeView;
-import com.example.lemie.moa.Views.SecondaryView;
+import com.example.lemie.moa.Fragments.MemeAdFragment;
+import com.example.lemie.moa.Fragments.MemeSwipeFragment;
+import com.example.lemie.moa.Fragments.SecondaryFragment;
 
 /**
  * Created by lemie on 12/28/2016.
@@ -22,9 +23,11 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new MemeView();
+                return new MemeSwipeFragment();
+            case 1:
+                return new MemeAdFragment();
             default:
-                return new SecondaryView();
+                return new SecondaryFragment();
         }
     }
 
@@ -34,7 +37,7 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Memes";
             case 1:
-                return "Add Memes";
+                return "Ad Memes";
             case 2:
                 return "Settings";
             default:

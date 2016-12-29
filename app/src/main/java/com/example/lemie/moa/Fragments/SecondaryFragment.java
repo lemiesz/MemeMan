@@ -1,4 +1,4 @@
-package com.example.lemie.moa.Views;
+package com.example.lemie.moa.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,13 +11,13 @@ import com.example.lemie.moa.R;
 /**
  * Created by lemie on 12/28/2016.
  */
-public class SecondaryView extends Fragment {
+public class SecondaryFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(
-                R.layout.meme_view_fragment, container, false);
+                R.layout.secondary_view_fragment, container, false);
         return rootView;
     }
 
