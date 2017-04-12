@@ -11,6 +11,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.lemie.moa.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.NativeExpressAdView;
 import com.pnikosis.materialishprogress.ProgressWheel;
 import com.squareup.picasso.Picasso;
 
@@ -38,16 +42,32 @@ public class MemeAdFragment extends Fragment {
         Picasso.with(getContext()).load("http://img.memecdn.com/wat-ad_o_1928877.jpg").into(topImage);
 
         final FrameLayout bottomLayout = (FrameLayout) rootView.findViewById(R.id.bottom_image_container);
+//        final AdView adView = new AdView(getContext());
+//        final AdView.LayoutParams params = new AdView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+//        adView.setLayoutParams(params);
+//        adView.setAdSize(AdSize.SMART_BANNER);
+//        adView.setAdUnitId(getContext().getString(R.string.banner_ad_unit_id));
+
+
+        final NativeExpressAdView expressAdView = (NativeExpressAdView) bottomLayout.findViewById(R.id.adView);
+
+
+        final AdRequest adRequest = new AdRequest.Builder().build();
+        expressAdView.loadAd(adRequest);
+        expressAdView.setVisibility(View.VISIBLE);
+//        bottomLayout.addView(adView);
+
         final ImageView bottomImage = (ImageView) bottomLayout.findViewById(R.id.image);
-
-        bottomLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), "The ads got you", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        Picasso.with(getContext()).load("http://1.bp.blogspot.com/-ho0-TNEjZso/TmpoZjFDX2I/AAAAAAAAARE/En4BvtA3z1Q/s1600/Palm_Centro_Magazine_Ad_by_koreansensation.jpg").into(bottomImage);
+        bottomImage.setVisibility(View.GONE);
+//
+//        bottomLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getContext(), "The ads got you", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//        Picasso.with(getContext()).load("http://1.bp.blogspot.com/-ho0-TNEjZso/TmpoZjFDX2I/AAAAAAAAARE/En4BvtA3z1Q/s1600/Palm_Centro_Magazine_Ad_by_koreansensation.jpg").into(bottomImage);
 
         return rootView;
     }

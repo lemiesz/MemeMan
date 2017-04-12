@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.lemie.moa.Fragments.AdTestFragment;
 import com.example.lemie.moa.Fragments.MemeAdFragment;
 import com.example.lemie.moa.Fragments.MemeSwipeFragment;
 import com.example.lemie.moa.Fragments.SecondaryFragment;
@@ -26,6 +27,8 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
                 return new MemeSwipeFragment();
             case 1:
                 return new MemeAdFragment();
+            case 2:
+                return new AdTestFragment();
             default:
                 return new SecondaryFragment();
         }

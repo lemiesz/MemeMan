@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MOA.iml" filepath="$PROJECT_DIR$/MOA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MemeMan.iml" filepath="$PROJECT_DIR$/MemeMan.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
